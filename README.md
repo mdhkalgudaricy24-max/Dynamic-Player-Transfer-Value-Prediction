@@ -1,4 +1,4 @@
-# TransferIQ: Football Player Market Value Prediction
+# TransferIQ: Intelligent Athlete Market Value Prediction Engine Using Integrated DataStreams |
 
 Regression pipeline that predicts a player's market value (EUR millions) from performance statistics, injury history, social-media metrics and contract data. Built during the Infosys Springboard AI/ML virtual internship (Dec 2025 - Jan 2026) and revised in Nov 2026 with a stricter evaluation (see *Revision history*).
 
