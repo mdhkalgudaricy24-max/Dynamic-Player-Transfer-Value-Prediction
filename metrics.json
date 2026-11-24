@@ -1,0 +1,82 @@
+{
+  "selected_model": "Ridge (linear baseline)",
+  "n_dev": 360,
+  "n_test": 90,
+  "n_features": 33,
+  "target_proxies_dropped": [
+    "performance_score",
+    "estimated_resale_value"
+  ],
+  "duplicate_features_dropped": [
+    "discipline_index",
+    "injury_risk_assessment",
+    "years_remaining_contract"
+  ],
+  "test": {
+    "r2": 0.9546864506272132,
+    "mae": 1.826997002664985,
+    "rmse": 2.3675099969847024
+  },
+  "test_r2_95ci": [
+    0.9359,
+    0.9682
+  ],
+  "test_mae_95ci": [
+    1.5179,
+    2.1448
+  ],
+  "target_mean_dev": 16.596302983247224,
+  "target_range": [
+    1.167719314,
+    61.2547141
+  ],
+  "ablation_cv(r2,mae)": {
+    "Ridge (linear baseline) | all features": [
+      0.9035,
+      2.08
+    ],
+    "Ridge (linear baseline) | without social": [
+      0.9032,
+      2.084
+    ],
+    "Ridge (linear baseline) | without injury": [
+      0.8999,
+      2.081
+    ],
+    "Ridge (linear baseline) | without contract": [
+      0.9018,
+      2.1
+    ],
+    "LightGBM | all features": [
+      0.8871,
+      2.133
+    ],
+    "LightGBM | without social": [
+      0.8893,
+      2.141
+    ],
+    "LightGBM | without injury": [
+      0.8874,
+      2.131
+    ],
+    "LightGBM | without contract": [
+      0.8869,
+      2.15
+    ]
+  },
+  "top_features": {
+    "defensive_index": 0.1792,
+    "goals_per_match": 0.1098,
+    "tackles": 0.0865,
+    "goals": 0.084,
+    "matches_played": 0.0635,
+    "minutes_played": 0.0468,
+    "assists_per_match": 0.039,
+    "interceptions": 0.0255,
+    "passes": 0.0155,
+    "yellow_cards": 0.0112
+  },
+  "params": {
+    "alpha": 100
+  }
+}
